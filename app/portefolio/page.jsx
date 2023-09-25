@@ -13,6 +13,7 @@ import MyCountup from '@/components/Countup';
 import {countUpItems} from "@/Data/Data"
 import { useInView } from 'react-intersection-observer';
 import Video from '@/components/Video';
+import Brandingmarque from '@/components/Brandingmarque';
 
 const page = () => {
 
@@ -48,16 +49,17 @@ const page = () => {
             }}
           >
     <Wrapper pageIndex={"Portefolio"}>
-      <div className='flex flex-col pt-60 items-center text-center'>
-        <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">Services</div>
-        <div className="font-semibold text-4xl text-Purple pb-4">Full-service marketing agency.</div>
-        <p className="text-DarkBlue font-bold text-xl leading-6 max-w-[600px]">We design our brand and marketing solutions based on timeless principles of human behavior and psychology but with a practical approach that allows us to adapt to current platforms and technologies.</p>
+      <div className='flex flex-col pt-40 items-center text-center'>
+        <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">Serviços</div>
+        <div className="font-semibold text-4xl text-Purple pb-4">Agência de marketing de serviço completo.</div>
+        <p className="text-DarkBlue font-bold text-xl leading-6 max-w-[600px]">temos orgulho no nosso trajeto e nas soluções apresentadas aos nossos clientes, o trabalho desenvolvido pela nossa equipa apresenta as mais diversas soluções para o teu negocio.
+comprova-o!</p>
         <Lottie className="w-[400px] h-[400px]" animationData={animationData}/>
       </div>
 
       <div className='flex flex-col items-center text-center'>
       <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">Websites</div>
-      <div className="font-semibold text-4xl text-Purple pb-4">Take a look some websites made</div>
+      <div className="font-semibold text-4xl text-Purple pb-4">Veja alguns sítios Web criados.</div>
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-8 mt-20'>
         {projects.map(project =>(
@@ -65,7 +67,7 @@ const page = () => {
             <div className='w-full h-3/4 relative group'>
               <img src={project.img} alt={project.name} className='w-full h-full object-cover'/>
               <div className="absolute w-full h-full bg-DarkBlue top-0 left-0 z-10 flex items-center justify-center gap-4 scale-0 group-hover:scale-100 transition-all duration-700">
-                <Link href="">
+                <Link target='_blanc' href={`${project.link}`}>
                   <ImEye className='hover:scale-110 transition-all duration-300' size={40} color='#ffffff'/>
                 </Link>
               </div>
@@ -96,10 +98,12 @@ const page = () => {
       </div>
 
       <div className='text-4xl text-Purple font-bold mt-28 mb-20 w-full flex items-center justify-center'>
-            <h1>We help you with your Brand</h1>
+            <h1>Ajudamo-lo com a Publicidade da sua marca !</h1>
         </div>
     <Video />
+
     </Wrapper>
+    <Brandingmarque />
 
           </motion.div>
         </AnimatePresence>

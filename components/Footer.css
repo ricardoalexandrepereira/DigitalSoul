@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 0;
-    
+    font-weight: 200;
 }
 .app__footer-links{
     width: 100%;
@@ -63,6 +63,7 @@ align-items: center;
     font-family: var(--font-base);
     color: #fff;
     font-size: 1rem;
+    font-weight: 200;
 }
 
 @media screen and (max-width:1150px) {

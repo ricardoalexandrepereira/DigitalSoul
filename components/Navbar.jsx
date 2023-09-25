@@ -60,8 +60,8 @@ const navLinkVariations = {
     <header className={`fixed w-full top-0 left-0 z-20 ${navScroll ? "bg-Glass1 backdrop-blur-sm" : ""}`}>
         <nav className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${showMenu ? "hidden" : ""}`}>
             <div className="flex justify-between items-center h-16">
-                <Link href="/" className="flex gap-2 items-center text-1xl text-[#e83468] font-bold">
-                <Image src={"/logo.png"} width={50} height={50} alt={"logo"}/>
+                <Link href="/" className="flex gap-2 items-center text-3xl font-light text-[#e83468]" id="letraEspecial">
+                <Image src={"/logodigital.png"} width={50} height={50} alt={"logo"}/>
                 Digital Soul
                 </Link>
                 <div className="hidden md:flex items-center justify-center space-x-4">

@@ -11,6 +11,10 @@ import { skills } from "@/Data/Data"
 import Skills from "@/components/Skills";
 import ContextPrices from "@/components/ContextPrices";
 import SocialMedia from "@/components/SocialMedia";
+import Website from "@/components/website";
+import Marca from "@/components/Marca";
+import Publicidade from "@/components/Publicidade";
+
 
 
 const page = () => {
@@ -42,16 +46,16 @@ console.log(Lottie)
         },
       }}
     >
-<Wrapper pageIndex={"About"}>
+<Wrapper pageIndex={"Services"}>
       <div className="flex flex-col gap-12 lg:flex-row pt-10 lg:pt-10 items-center justify-center mb-12 lg:mb-0 min-h-screen">
         {/* <Image src={"/aboutImage.png"} width={500} height={500} alt={"about image"}/> */}
         <Lottie className="w-[400px] h-[400px]" animationData={animationData}/>
         <div className="lg:w-1/2 lg:ml-8 max-w-md md:max-w-xl">
-          <div className="uppercase font-semibold text-sm  text-DarkBlue pb-4">Introduction</div>
-          <div className="font-semibold text-4xl text-Purple pb-4">Marketing & Social Media, based on Lisbon.</div>
-          <p className=" text-DarkBlue font-bold text-xl leading-6">We design our brand and marketing solutions based on timeless principles of human behavior and psychology but with a practical approach that allows us to adapt to current platforms and technologies.</p>
+          <div className="uppercase font-semibold text-sm  text-DarkBlue pb-4">Introdução</div>
+          <div className="font-semibold text-4xl text-Purple pb-4">Marketing & Social Media, sediada em Lisboa.</div>
+          <p className=" text-DarkBlue font-bold text-xl leading-6">Concebemos as nossas soluções de marca e marketing com base em princípios intemporais do comportamento humano e da psicologia, mas com uma abordagem prática que nos permite adaptarmo-nos às plataformas e tecnologias actuais.</p>
           <div className="flex gap-8 mt-8">
-            <Link className="text-white font-semibold text-sm uppercase bg-Purple rounded-md px-3 py-2 border-transparent border-[1px] hover:bg-white hover:border-[1px] hover:border-Purple hover:text-Purple ease duration-100" href="/contact">Send us a mensage</Link>
+            <Link className="text-white font-semibold text-sm uppercase bg-Purple rounded-md px-3 py-2 border-transparent border-[1px] hover:bg-white hover:border-[1px] hover:border-Purple hover:text-Purple ease duration-100" href="/contact">contacta-nos</Link>
           </div>
         </div>
       </div>
@@ -59,11 +63,25 @@ console.log(Lottie)
       <Skills skills={skills} />
 </Wrapper>
 <ContextPrices />
-  <SocialMedia />
+<SocialMedia />
 
+<div className="flex flex-col items-center justify-center mt-[100px] overflow-hidden">
+<h1 className='text-2xl lg:text-3xl text-Purple font-bold'>Websites</h1>
+<Website/>
+</div>
 
-    </motion.div>
-  </AnimatePresence>
+<div className="flex flex-col items-center justify-center mt-[20px] overflow-hidden">
+<h1 className='text-2xl lg:text-3xl text-Purple font-bold'>A tua Marca</h1>
+<Marca />
+</div>
+
+<div className="flex flex-col items-center justify-center mt-[20px] overflow-hidden">
+<h1 className='text-2xl lg:text-3xl text-Purple font-bold'>Publicidade</h1>
+<Publicidade />
+</div>
+
+</motion.div>
+</AnimatePresence>
     
   )
 }

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "letraEspecial";
+  src: url(../public/fonts/PineTree.otf);
+}
+
 ::-webkit-scrollbar{
   width: 0.75rem;
   background-color: #e9caf5;
@@ -22,11 +27,11 @@
 body{
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  
-  
+  padding: 0; 
 }
-
+#letraEspecial{
+  font-family: "letraEspecial";
+}
 .TextShadow:hover{
   text-shadow: 0 0 1px #e83468, 0 0 1px #e83468, 0 0 1px #e83468;
 }
