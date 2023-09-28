@@ -72,7 +72,7 @@ const navLinkVariations = {
 
                {/*  hamburguer menu */}
                 <div className="flex md:hidden items-center">
-                    <HiOutlineMenuAlt4 className="cursor-pointer w-6 h-6" onClick={()=> setShowMenu(!showMenu)}/>
+                    <HiOutlineMenuAlt4 className="cursor-pointer w-6 h-6 text-[#e83468]" onClick={()=> setShowMenu(!showMenu)}/>
                 </div>
             </div>
         </nav>

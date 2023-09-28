@@ -14,6 +14,7 @@ export const navLinks = [
     {id:2, path:"/about", label:"Serviços"},
     {id:3, path:"/portefolio", label:"Portefólio"},
     {id:4, path:"/contact", label:"Contacto"},
+    
 ]
 
 export const services = [
@@ -72,7 +73,7 @@ export const brandingMarquee = [
     {id:2, img:"/bb.png"},
     {id:4, img:"/2.png"},
     {id:5, img:"/3.png"},
-    {id:6, img:"/4.png"},
+    {id:6, img:"/8.png"},
     {id:7, img:"/5.png"},
     {id:8, img:"/6.png"},
     {id:9, img:"/7.png"},

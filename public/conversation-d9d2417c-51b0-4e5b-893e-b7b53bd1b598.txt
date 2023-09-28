@@ -1,0 +1,25 @@
+Conversation Id: d9d2417c-51b0-4e5b-893e-b7b53bd1b598
+Created on: 25/09/2023, 19:28:09
+User: 238140f7-080e-4777-b64d-e98f4d14a8e2
+-----------------
+[25/09/2023, 19:30:35] Assitente Virtual: Event (text): Obrigado pela sua visita, esperamos que volte em breve 🌞🤗 Digital Soul
+[25/09/2023, 19:30:35] User: Event (quick_reply): Não
+[25/09/2023, 19:30:28] Assitente Virtual: Event (single-choice): Agradecemos o seu interesse nos nossos serviços. Gostaria de fazer outro pedido de informação?
+[25/09/2023, 19:30:26] User: Event (text): 917326624
+[25/09/2023, 19:30:16] Assitente Virtual: Event (text): Qual é o seu número de telemovel?
+[25/09/2023, 19:30:14] User: Event (text): pepe@gmail.com
+[25/09/2023, 19:29:56] Assitente Virtual: Event (text): Qual é o seu Email?
+[25/09/2023, 19:29:56] Assitente Virtual: Event (text):  Com certeza, estamos disponíveis para conversar mais sobre como podemos ajudar  a fortalecer sua marca. Por favor, compartilhe seu endereço de e-mail, e entraremos em contato prontamente para agendar uma consulta. Agradecemos sinceramente pelo seu interesse nos nossos serviços na Digital Soul e estamos ansiosos para trabalhar juntos! 📧🤝🌟
+[25/09/2023, 19:29:55] User: Event (quick_reply): Sim
+[25/09/2023, 19:29:31] Assitente Virtual: Event (single-choice): Queres saber mais sobre nosso serviço de Chatbot?
+[25/09/2023, 19:29:31] Assitente Virtual: Event (text): 🤖 Explore nosso serviço de Criação e Design de Chatbot! Nossos especialistas em inteligência artificial estão prontos para desenvolver chatbots personalizados que podem aprimorar a experiência do seu cliente, automatizar tarefas e impulsionar o envolvimento. Desde chatbots de atendimento ao cliente até assistentes virtuais, criamos soluções sob medida para atender às suas necessidades. Como podemos ajudá-lo a trazer a eficiência e a interatividade do chatbot para o seu negócio hoje? 🤝🤖💬
+[25/09/2023, 19:29:30] User: Event (quick_reply): Chatbot
+[25/09/2023, 19:29:20] Assitente Virtual: Event (single-choice): Que serviço precisa?
+[25/09/2023, 19:29:20] Assitente Virtual: Event (text): Muito obrigado pela informação, gostaríamos de saber como o podemos ajudar ?
+[25/09/2023, 19:29:19] User: Event (text): inmobiliaria
+[25/09/2023, 19:28:34] Assitente Virtual: Event (text): Qual é o sector de atividade da sua empresa?
+[25/09/2023, 19:28:33] User: Event (quick_reply): Sim, pode perguntar
+[25/09/2023, 19:28:21] Assitente Virtual: Event (single-choice): Para o orientar melhor, vou fazer-lhe algumas perguntas, se não se importa. 
+[25/09/2023, 19:28:21] Assitente Virtual: Event (text): 😀Olá! Bem-vindo à Digital Soul, Onde Criamos Conexões Digitais que Encantam e Impulsionam. 💻✨ Descubra como transformamos ideias em realidade digital! 
+Estou aqui para ajudar a responder a todas as perguntas sobre os nossos serviços.
+[25/09/2023, 19:28:18] User: Event (text): ola

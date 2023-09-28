@@ -21,9 +21,9 @@ const Footer = () => {
        <p className="p__opensans">The best way to find yourself its to lose yourself in the service of others</p>
 
          <div className="app__footer-links_icons">
-           <FiFacebook />
+           {/* <FiFacebook />
            <FiInstagram/>
-           <FiTwitter/>
+           <FiTwitter/> */}
          </div>
      </div>
  
