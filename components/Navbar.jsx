@@ -7,6 +7,7 @@ import {HiOutlineMenuAlt4, HiX} from "react-icons/hi"
 import { useEffect, useState } from "react"
 import {motion} from "framer-motion"
 import Image from "next/image"
+import Sound from "./Sound"
 
 
 
@@ -66,7 +67,10 @@ const navLinkVariations = {
                 <Image src={"/logodigital.png"} width={50} height={50} alt={"logo"}/>
                 Digital Soul
                 </Link>
-
+               
+                
+                <Sound />
+                
                 
 
                 <div className="hidden md:flex items-center justify-center space-x-4">

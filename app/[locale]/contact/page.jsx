@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import Confetti from '@/components/Confetti';
 import Wrapper from '@/components/Wrapper'
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
@@ -7,8 +8,11 @@ import { contacts } from '@/Data/Data';
 import {useTranslations} from 'next-intl';
 
 
+
+
 const page = () => {
 
+  const [isVisible, setIsVisible] = useState(false);
   const t = useTranslations('Index');
 
   const router = useRouter();
@@ -71,10 +75,13 @@ const page = () => {
             <div className="flex flex-col gap-9 items-center border-b border-Purple py-2 mb-8">
              <textarea name='message' cols="30" rows="6" type="text" className='appearance-none bg-transparent border-none w-full text-DarkBlue mr-3 py-1 px-2 leading-tight focus:outline-none resize-none' placeholder='Message'/>
             </div>
-              <button  className='mt-10 px-8 py-2 flex text-right rounded-md bg-Purple text-White uppercase text-sm cursor-pointer'>{t('button')}</button>
+              <button onClick={() => setIsVisible(true)} className='mt-10 px-8 py-2 flex text-right rounded-md bg-Purple text-White uppercase text-sm cursor-pointer'>{t('button')}</button>
+              {isVisible && <Confetti />}
           </form>
 
+          
         </div>
+                <Confetti />
     </Wrapper>
           </motion.div>
         </AnimatePresence>
