@@ -1,7 +1,8 @@
 "use client";
-
+import {NextIntlClientProvider} from 'next-intl';
+import {notFound} from 'next/navigation';
 import Navbar from "@/components/Navbar";
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
@@ -34,11 +35,18 @@ const initBotpress = () =>{
 
 
 }
-export default function RootLayout({ children }) {
- 
+export default async function RootLayout({ children, params: {locale} }) {
+
+
+  let messages;
+  try {
+    messages = (await import(`../../messages/${locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
 
   return (
-    <html lang="pt">
+    <html lang={locale}>
      <head>
       
       <Script src="https://cdn.botpress.cloud/webchat/v0/inject.js"
@@ -46,14 +54,14 @@ export default function RootLayout({ children }) {
         initBotpress();
       }}
       />
-      
-
      </head>
 
       <body className={inter.className} suppressHydrationWarning={true}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
         <Navbar />
          {children}
         <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

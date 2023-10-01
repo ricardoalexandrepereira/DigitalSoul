@@ -1,14 +1,15 @@
 "use client";
 /* import Image from "next/image" */
+import {useTranslations} from 'next-intl';
 import Lottie from "lottie-react"
-import animationData from "../../public/textmsg.json"
+import animationData from "../../../public/textmsg.json"
 import Wrapper from '@/components/Wrapper'
 import React from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { skills } from "@/Data/Data"
-import Skills from "@/components/Skills";
+/* import { skills } from "@/Data/Data" */
+/* import Skills from "@/components/Skills"; */
 import ContextPrices from "@/components/ContextPrices";
 import SocialMedia from "@/components/SocialMedia";
 import Website from "@/components/website";
@@ -18,7 +19,10 @@ import Publicidade from "@/components/Publicidade";
 
 
 const page = () => {
-console.log(Lottie)
+
+  const t = useTranslations('Index');
+
+
   const router = useRouter();
   return (
   
@@ -51,16 +55,16 @@ console.log(Lottie)
         {/* <Image src={"/aboutImage.png"} width={500} height={500} alt={"about image"}/> */}
         <Lottie className="w-[400px] h-[400px]" animationData={animationData}/>
         <div className="lg:w-1/2 lg:ml-8 max-w-md md:max-w-xl">
-          <div className="uppercase font-semibold text-sm  text-DarkBlue pb-4">Introdução</div>
-          <div className="font-semibold text-4xl text-Purple pb-4">Marketing & Social Media, sediada em Lisboa.</div>
-          <p className=" text-DarkBlue font-bold text-xl leading-6">Concebemos as nossas soluções de marca e marketing com base em princípios intemporais do comportamento humano e da psicologia, mas com uma abordagem prática que nos permite adaptarmo-nos às plataformas e tecnologias actuais.</p>
+          <div className="uppercase font-semibold text-sm  text-DarkBlue pb-4">{t('about')}</div>
+          <div className="font-semibold text-4xl text-Purple pb-4">{t('about1')}</div>
+          <p className=" text-DarkBlue font-bold text-xl leading-6">{t('about2')}</p>
           <div className="flex gap-8 mt-8">
-            <Link className="text-white font-semibold text-sm uppercase bg-Purple rounded-md px-3 py-2 border-transparent border-[1px] hover:bg-white hover:border-[1px] hover:border-Purple hover:text-Purple ease duration-100" href="/contact">contacta-nos</Link>
+            <Link className="text-white font-semibold text-sm uppercase bg-Purple rounded-md px-3 py-2 border-transparent border-[1px] hover:bg-white hover:border-[1px] hover:border-Purple hover:text-Purple ease duration-100" href="/contact">{t('about3')}</Link>
           </div>
         </div>
       </div>
+      {/* <Skills skills={skills} /> */}
       
-      <Skills skills={skills} />
 </Wrapper>
 <ContextPrices />
 <SocialMedia />

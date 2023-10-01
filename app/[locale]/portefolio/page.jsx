@@ -1,7 +1,8 @@
 "use client";
+import {useTranslations} from 'next-intl';
 import Wrapper from '@/components/Wrapper'
 import Lottie from "lottie-react"
-import animationData from "../../public/hummingbird.json"
+import animationData from "../../../public/hummingbird.json"
 import { projects } from '@/Data/Data';
 import React from 'react'
 import { AnimatePresence, motion } from "framer-motion";
@@ -16,6 +17,8 @@ import Video from '@/components/Video';
 import Brandingmarque from '@/components/Brandingmarque';
 
 const page = () => {
+
+  const t = useTranslations('Index');
 
   const {ref,inView} = useInView({
     threshold: 0.5
@@ -50,16 +53,15 @@ const page = () => {
           >
     <Wrapper pageIndex={"Portefolio"}>
       <div className='flex flex-col pt-40 items-center text-center'>
-        <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">Serviços</div>
-        <div className="font-semibold text-4xl text-Purple pb-4">Agência de marketing de serviço completo.</div>
-        <p className="text-DarkBlue font-bold text-xl leading-6 max-w-[600px]">temos orgulho no nosso trajeto e nas soluções apresentadas aos nossos clientes, o trabalho desenvolvido pela nossa equipa apresenta as mais diversas soluções para o teu negocio.
-comprova-o!</p>
+        <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">{t('portefolioTitle')}</div>
+        <div className="font-semibold text-4xl text-Purple pb-4">{t('portefolioSubtitle')}</div>
+        <p className="text-DarkBlue font-bold text-xl leading-6 max-w-[600px]">{t('portefolioSubtitle2')}</p>
         <Lottie className="w-[400px] h-[400px]" animationData={animationData}/>
       </div>
 
       <div className='flex flex-col items-center text-center'>
-      <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">Websites</div>
-      <div className="font-semibold text-4xl text-Purple pb-4">Veja alguns sítios Web criados.</div>
+      <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">{t('portefolioTitleWebsite')}</div>
+      <div className="font-semibold text-4xl text-Purple pb-4">{t('portefolioSubtitleWebsite')}</div>
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-8 mt-20'>
         {projects.map(project =>(
@@ -98,7 +100,7 @@ comprova-o!</p>
       </div>
 
       <div className='text-4xl text-Purple font-bold mt-28 mb-20 w-full flex items-center justify-center'>
-            <h1>Ajudamo-lo com a Publicidade da sua marca !</h1>
+            <h1>{t("publicidadeMarca")}</h1>
         </div>
     <Video />
 

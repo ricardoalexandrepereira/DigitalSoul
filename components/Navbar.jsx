@@ -1,5 +1,5 @@
 "use client"
-
+import {useTranslations} from 'next-intl';
 import Link from "next/link"
 import {navLinks} from "@/Data/Data"
 import {usePathname} from "next/navigation"
@@ -11,6 +11,8 @@ import Image from "next/image"
 
 
 const Navbar = () => {
+
+    const t = useTranslations('Index');
 
 const pathname = usePathname()
 
@@ -64,6 +66,9 @@ const navLinkVariations = {
                 <Image src={"/logodigital.png"} width={50} height={50} alt={"logo"}/>
                 Digital Soul
                 </Link>
+
+                
+
                 <div className="hidden md:flex items-center justify-center space-x-4">
                   {navLinks.map(links => (
                     <Link key={links.path} className={`text-lg font-medium TextShadow ${isActive(links.path)}`} href={links.path}>{links.label}</Link>
