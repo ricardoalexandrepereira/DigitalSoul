@@ -18,11 +18,9 @@ import Publicidade from "@/components/Publicidade";
 
 
 
-const page = () => {
+export function Services() {
 
   const t = useTranslations('Index');
-
-
   const router = useRouter();
   return (
   
@@ -90,4 +88,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Services

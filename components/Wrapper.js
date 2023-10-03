@@ -1,13 +1,12 @@
 import React from 'react'
 import {FaWhatsapp} from "react-icons/fa";
 import Link from 'next-intl/link'; 
-import {useTranslations} from 'next-intl';
-
-const Wrapper = ({pageIndex, children, className}) => {
 
 
-  const t = useTranslations('Index');
+const Wrapper = ({ children, className}) => {
 
+
+  
   return (
     <section className={className}>
 

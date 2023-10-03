@@ -10,7 +10,7 @@ import {useTranslations} from 'next-intl';
 
 
 
-const page = () => {
+export function Contact() {
 
   const [isVisible, setIsVisible] = useState(false);
   const t = useTranslations('Index');
@@ -89,4 +89,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contact

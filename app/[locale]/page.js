@@ -19,9 +19,7 @@ export default function Home() {
 
   const t = useTranslations('Index');
 
-
-
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
 const videoRef = useRef(null)
 const textRef = useRef(null)
@@ -49,7 +47,7 @@ tl.to(
 tl.to(
   digitalsoulRef.current,
   {
-    translateX:100,
+    translateX:80,
   },
   0,
 );
@@ -116,7 +114,7 @@ tl.to(
               <div
               ref={digitalsoulRef}
                 id="letraEspecial"
-                className="min-w-[200px] flex left-[-30px] sm:text-[7.2rem] xs:text-[4.2rem] lg:text-[200px] text-Purple font-extralight "
+                className="min-w-[200px] flex absolute top-[50%] left-[0%] text-[3.3rem] sm:text-[7.2rem] xs:text-[4.2rem] lg:text-[200px] text-Purple font-extralight "
               >
                 Digital Soul
               </div>

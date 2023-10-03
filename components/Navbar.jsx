@@ -7,7 +7,7 @@ import {HiOutlineMenuAlt4, HiX} from "react-icons/hi"
 import { useEffect, useState } from "react"
 import {motion} from "framer-motion"
 import Image from "next/image"
-import Sound from "./Sound"
+/* import Sound from "./Sound" */
 
 
 
@@ -69,7 +69,7 @@ const navLinkVariations = {
                 </Link>
                
                 
-                <Sound />
+            {/*     <Sound /> */}
                 
                 
 

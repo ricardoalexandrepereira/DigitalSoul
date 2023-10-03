@@ -4,8 +4,8 @@ import Wrapper from '@/components/Wrapper'
 import Lottie from "lottie-react"
 import animationData from "../../../public/hummingbird.json"
 import { projects } from '@/Data/Data';
-import React from 'react'
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useRef } from 'react'
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ImEye } from "react-icons/im"
 import Link from 'next/link';
@@ -16,7 +16,15 @@ import { useInView } from 'react-intersection-observer';
 import Video from '@/components/Video';
 import Brandingmarque from '@/components/Brandingmarque';
 
-const page = () => {
+
+export function Portfolio() {
+
+  const refAnim = useRef(null)
+
+  const { scrollYProgress} = useScroll({
+    target:refAnim,
+    offset: ["0 1", "2 1"]
+  })
 
   const t = useTranslations('Index');
 
@@ -51,7 +59,13 @@ const page = () => {
               },
             }}
           >
-    <Wrapper pageIndex={"Portefolio"}>
+    <motion.Wrapper 
+    ref={refAnim} 
+    style={{
+      scale: scrollYProgress,
+      opacity:scrollYProgress,
+    }}
+    pageIndex={"Portefolio"}>
       <div className='flex flex-col pt-40 items-center text-center'>
         <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">{t('portefolioTitle')}</div>
         <div className="font-semibold text-4xl text-Purple pb-4">{t('portefolioSubtitle')}</div>
@@ -63,7 +77,10 @@ const page = () => {
       <div className="uppercase font-semibold text-sm text-DarkBlue pb-4">{t('portefolioTitleWebsite')}</div>
       <div className="font-semibold text-4xl text-Purple pb-4">{t('portefolioSubtitleWebsite')}</div>
       </div>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-8 mt-20'>
+
+      <div 
+       
+      className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-8 mt-20'>
         {projects.map(project =>(
           <div className='bg-Glass1 p-4 h-[350px] rounded-lg' key={project.id}>
             <div className='w-full h-3/4 relative group'>
@@ -104,7 +121,7 @@ const page = () => {
         </div>
     <Video />
 
-    </Wrapper>
+    </motion.Wrapper>
     <Brandingmarque />
 
           </motion.div>
@@ -113,4 +130,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Portfolio

@@ -35,7 +35,7 @@ const ContextPrices = () => {
               smooth={true}
               offset={50}
               duration={500}
-              className="bg-Purple text-white border-[1px] px-2 py-1 rounded-lg cursor-pointer"
+              className="bg-Purple text-white border-[1px] px-2 py-1 rounded-lg cursor-pointer hover:scale-110 transition"
             >
               Saber Mais
             </Link>
@@ -69,7 +69,7 @@ const ContextPrices = () => {
               smooth={true}
               offset={50}
               duration={500}
-              className="bg-white text-Purple px-2 py-1 rounded-lg cursor-pointer"
+              className="bg-white text-Purple px-2 py-1 rounded-lg cursor-pointer hover:scale-110 transition"
             >
               Saber Mais
             </Link>
@@ -101,7 +101,7 @@ const ContextPrices = () => {
               smooth={true}
               offset={50}
               duration={500}
-              className="bg-Purple text-white border-[1px] px-2 py-1 rounded-lg cursor-pointer"
+              className="bg-Purple text-white border-[1px] px-2 py-1 rounded-lg cursor-pointer hover:scale-110 transition"
             >
               Saber Mais
             </Link>

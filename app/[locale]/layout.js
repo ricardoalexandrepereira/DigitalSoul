@@ -7,6 +7,8 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
+ 
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +59,7 @@ export default async function RootLayout({ children, params: {locale} }) {
      </head>
 
       <body className={inter.className} suppressHydrationWarning={true}>
-      <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
         <Navbar />
          {children}
         <Footer />

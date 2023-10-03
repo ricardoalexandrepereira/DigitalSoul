@@ -1,4 +1,4 @@
-'use client'
+/* 'use client'
 import React, { useRef, useState } from 'react'
 import "../components/Soundcss.css";
 
@@ -40,4 +40,4 @@ const handleClick = ()=>{
   )
 }
 
-export default Sound
+export default Sound */
