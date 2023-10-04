@@ -12,9 +12,9 @@ import Link from "next/link";
 /* import Skills from "@/components/Skills"; */
 import ContextPrices from "@/components/ContextPrices";
 import SocialMedia from "@/components/SocialMedia";
-import Website from "@/components/website";
 import Marca from "@/components/Marca";
 import Publicidade from "@/components/Publicidade";
+import Website from '@/components/Website';
 
 
 
@@ -69,7 +69,7 @@ export function Services() {
 
 <div className="flex flex-col items-center justify-center mt-[100px] overflow-hidden">
 <h1 className='text-2xl lg:text-3xl text-Purple font-bold'>Websites</h1>
-<Website/>
+<Website />
 </div>
 
 <div className="flex flex-col items-center justify-center mt-[20px] overflow-hidden">

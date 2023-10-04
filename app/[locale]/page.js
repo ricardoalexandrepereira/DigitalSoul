@@ -14,7 +14,6 @@ import ChatBot from '@/components/ChatBot';
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 
-
 export default function Home() {
 
   const t = useTranslations('Index');
